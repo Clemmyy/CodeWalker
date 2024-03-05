@@ -1,0 +1,140 @@
+.footer_info1 {
+	margin-top: 1rem;
+	background-color: var(--clr-slate400);
+	align-items: center;
+}
+
+.children {
+	margin-bottom: 0.5rem;
+}
+
+.footer_link,
+.footer_text {
+	padding: 0 1rem;
+}
+
+.footer_info1 .footer_link {
+	display: flex;
+	gap: 2rem;
+}
+
+.footer_link li a {
+	color: var(--clr-indigo);
+	font-size: var(--size-xl);
+}
+
+.footer_link li a:hover {
+	color: var(--clr-rose);
+	transition: all 0.3s ease-in-out;
+}
+
+.footer_info2 {
+	background-color: var(--clr-slate600);
+	padding: 0 1rem;
+}
+
+.footer_title {
+	color: var(--clr-light);
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.footer_title::after {
+	content: "";
+	width: 50%;
+	height: 0.2rem;
+	background-color: var(--clr-rose);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.footer_child2 .footer_about-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_about-container a {
+	margin-bottom: 1rem;
+	color: var(--clr-indigo);
+}
+
+.footer_about-container a:hover {
+	color: var(--clr-rose);
+	transition: all 0.3s ease-in-out;
+}
+
+.footer_child3 .child3_container h3 {
+	margin-bottom: 1rem;
+}
+
+.footer_child4 .footer_boxes {
+	display: flex;
+}
+
+.footer_child4 .footer_boxes i {
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	font-size: var(--size-xl);
+}
+
+.footer_child4 .footer_boxes p {
+	font-size: var(--size-base);
+	color: var(--clr-light);
+}
+
+.footer_info3 {
+	background-color: var(--clr-slate800);
+	padding: 1rem;
+	text-align: center;
+	color: var(--clr-light);
+}
+
+.footer_info3 a {
+	color: var(--clr-light);
+}
+
+/* xs */
+@media (min-width: 475px) {
+	.footer_info1 {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.footer_text {
+		font-size: var(--size-base);
+	}
+
+	.footer_info2 {
+		padding: 0 1rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+	.footer_info1 {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 3rem;
+	}
+	.footer_info2 {
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

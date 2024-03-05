@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.hero-h1 {
+    color: var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: calc(var(--size-5xl) - 25px);
+    line-height: 0.9;
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-h1 span {
+    -webkit-text-stroke: 1px var(--clr-light);
+    font-size: var(--size-3xl);
+    padding: 5px;
+    margin-left: -10px;
+    color: transparent;
+}
+
+.hero-h1 span:hover {
+    color: var(--clr-light);
+}
+
+/* if a sibling span is in the hover state */
+.hero-h1 span:has(~span:hover) {
+    color: var(--clr-light);
+}
+
+.hero-welcome {
+    text-align: center;
+}
+
+.hero-welcome h2 {
+    color: var(--clr-slate800);
+    font-size: var(--size-xl);
+}
+
+.hero-description {
+    margin: 0 auto;
+    max-width: 60ch;
+    font-size: var(--size-md);
+    color: var(--clr-slate800);
+}
+
+.btn {
+    margin-top: 1.2rem;
+}
+
+.hero-btn a {
+    color: var(--clr-light);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .hero-h1 {
+        font-size: var(--size-6xl);
+    }
+
+    .hero-h1 span{
+        font-size: var(--size-4xl);
+    }
+
+
+    .hero-welcome h2 {
+        font-size: var(--size-xl);
+    }
+
+    .hero-description {
+        font-size: var(--size-md);
+    }
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .hero-h1 {
+        font-size: var(--size-7xl);
+    }
+
+    .hero-h1 span{
+        font-size: var(--size-5xl);
+    }
+
+    .hero-welcome h2 {
+        font-size: var(--size-2xl);
+    }
+
+    .hero-description {
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .hero-h1 {
+        font-size: var(--size-8xl);
+    }
+
+    .hero-h1 span{
+        font-size: var(--size-6xl);
+    }
+
+    .hero-welcome h2 {
+        font-size: var(--size-3xl);
+    }
+
+    .hero-description {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .hero-h1 {
+        font-size: var(--size-9xl);
+    }
+
+    .hero-h1 span{
+        font-size: var(--size-8xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero-h1 {
+        font-size: var(--size-10xl);
+    }
+
+    .hero-h1 span{
+        font-size: var(--size-9xl);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
